@@ -1,0 +1,9 @@
+const response = await fetch('YOUR_API_ENDPOINT', {
+  method: 'POST',
+  headers: { 'Content-Type': 'application/json' },
+  body: JSON.stringify({
+    brand: 'Silk & Ivory',
+    color: '001'
+  })
+});
+const data = await response.json();
